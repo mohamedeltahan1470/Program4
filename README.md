@@ -4,8 +4,12 @@
 
 This project is a responsive website designed to provide an engaging user experience across various devices. The website features a homepage with a welcoming section, featured works, and additional sections detailing services offered.
 
-![Website Screenshot](./images/eee.jpeg)  <!-- Update the image path and name accordingly -->
-
+![Website Screenshot](./images/photo1.png)  <!-- Update the image path and name accordingly -->
+![Website Screenshot](./images/photo2.png) 
+![Website Screenshot](./images/photo3.png) 
+![Website Screenshot](./images/photo4.png) 
+![Website Screenshot](./images/photo5.png) 
+![Website Screenshot](./images/photo6.png) 
 ## Table of Contents
 
 - [Features](#features)

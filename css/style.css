@@ -109,6 +109,9 @@ body {
 }
 
 /*///////////////////////////////Welcome To Website///////////////////////*/
+.welcome{
+    margin-bottom: 200px;
+}
 .welcomediv1,
 .Featureddiv1 {
     text-align: center;
@@ -400,7 +403,7 @@ a {
 }
 
 /*///////////////////////////////Why Choose Us2////////////////////////////////////*/
-.WhyChooseUs {
+/* .WhyChooseUs {
     width: 100%;
     height: 100vh;
     background-image: url(../images/eee.jpeg);
@@ -434,6 +437,144 @@ h2 {
 
 .WhyChooseUs2 div h2 {
     font-size: 25px;
+} */
+/* General styling for the WhyChooseUs section */
+.WhyChooseUs {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.WhyChooseUs2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.WhyChooseUs2 div {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.WhyChooseUs2 div:hover {
+    transform: translateY(-10px);
+}
+
+.WhyChooseUs2 i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.WhyChooseUs2 h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.WhyChooseUs2 p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Styling for the Pricing Table */
+.welcome22 {
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.welcomediv1 {
+    margin-bottom: 20px;
+}
+
+.welcomediv1 h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.divline {
+    height: 3px;
+    width: 50px;
+    background-color: #3498db;
+    margin: 0 auto 40px auto;
+}
+
+.welcomediv2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.welcomediv2web1 {
+    flex: 1;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.welcomediv2web1:hover {
+    transform: translateY(-10px);
+}
+
+.welcomediv2web1 h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.welcomediv2web1 .div h3 {
+    font-size: 48px;
+    color: #3498db;
+    margin: 0;
+}
+
+.welcomediv2web1 .div p {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+.welcomediv2web1 p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.welcomediv2web1 button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcomediv2web1 button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .WhyChooseUs2, .welcomediv2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .WhyChooseUs2 div, .welcomediv2web1 {
+        max-width: 90%;
+    }
 }
 
 /*/////////////////////////////Pricing Table//////////////////////////////*/
@@ -505,8 +646,9 @@ h2 {
 .welcomediv2web12 button {
     font-size: 15px;
     border: 2px solid rgb(0, 86, 245);
-    height: 25px;
+    /* height: 25px; */
     margin: 10PX 0PX;
+    padding:10px 15px;
 }
 
 .welcomediv2web12:hover h4 {
@@ -523,6 +665,7 @@ h2 {
     transition: 1s;
 }
 
+
 /*//////////////////////////////////////////////////////////////////////*/
 .parent {
     background-image: url(../images/zzz.png);
@@ -530,7 +673,7 @@ h2 {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 150px;
+    margin-top: -120px;
 }
 
 .childdiv {
@@ -541,12 +684,12 @@ h2 {
 }
 
 .child1 .divdd {
-    width: 65%;
-    margin: 130px 0px 0px 330px;
+    width: 50%;
+    margin: 130px 0px 0px 70px;
 }
 
 .child1 .divdc {
-    width: 65%;
+    width: 50%;
     margin: 130px 0px 0px 70px;
 }
 
@@ -579,140 +722,136 @@ h2 {
 }
 
 /*///////////////////////////////////ourteam/////////////////////////*/
-.our {
-    width: 400px;
-    height: 300px;
+
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.our img {
-    width: 330px;
-    height: 200px;
+/* Body and main container styles */
+body {
+    font-family: Arial, sans-serif; /* Change as needed */
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Default text color */
 }
 
-.our div {
-    width: 330px;
-    height: 200px;
-    margin: 20px 30px;
-    position: relative;
+.team-container,
+.news-container {
+    max-width: 1200px; /* Limit the maximum width of the sections */
+    margin: 0 auto; /* Center the sections */
+    padding: 20px; /* Padding for top and bottom */
+    background-color: #ffffff; /* White background for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 8px; /* Rounded corners */
 }
 
-.our .divs {
-    width: 39px;
-    height: 120px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
+/* Section titles and dividers */
+.section-title h2 {
+    font-size: 28px; /* Size of section title */
+    margin-bottom: 10px; /* Space below the title */
 }
 
-.our h2 {
-    color: black;
+.divider {
+    height: 2px; /* Thickness of the divider */
+    background-color: #ccc; /* Divider color */
+    margin-bottom: 20px; /* Space below the divider */
 }
 
-.our i {
-    font-size: 41px;
-    color: #7ba7ff;
-    background-color: #fff;
-    margin: -20px -62px 0px 0px;
+/* Team section styles */
+.team-list {
+    display: flex; /* Flexbox for team member cards */
+    justify-content: space-between; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards to new line if needed */
 }
 
-.our p {
-    color: rgb(71, 87, 255);
+.team-member-card {
+    flex: 1 1 30%; /* Flex basis for responsive design */
+    margin: 10px; /* Space between cards */
+    padding: 20px; /* Padding inside each card */
+    border: 1px solid #ddd; /* Border around the card */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for cards */
+    text-align: center; /* Center align text */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
 }
 
-.fa-twitter-square {
-    margin-top: -20px;
+.team-member-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
-.fa-linkedin {
-    margin-top: -100px;
+/* Social links styles */
+.social-links a {
+    margin: 0 5px; /* Space between social icons */
+    font-size: 20px; /* Icon size */
+    color: #333; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
-/*<!--///////////////////////////////////////////////////////////////-->*/
-.recent-News {
-    background-color: white;
-    height: 705px;
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
 }
 
-.recent {
-    height: 450px;
-    border: 0;
+/* News section styles */
+.news-list {
+    margin-top: 20px; /* Space above news items */
 }
 
-.recent i {
-    color: rgb(43, 86, 167);
+.news-item {
+    background-color: #f9f9f9; /* Light background for news items */
+    margin: 10px 0; /* Space between news items */
+    padding: 15px; /* Padding inside news items */
+    border: 1px solid #ddd; /* Border around news item */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
 }
 
-.recent div {
-    border-radius: 0;
-    border: 0px;
-    width: 300px;
-    height: 40px;
-    margin: 20px 0px 0px 20px;
+.news-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
-.recent img {
-    display: block;
-    margin-left: 20px;
+/* News meta information styles */
+.news-meta {
+    display: flex; /* Flexbox for meta info */
+    align-items: center; /* Center align items */
+    margin-bottom: 10px; /* Space below meta info */
 }
 
-.recent div .i1 {
-    padding: 5px 0px 0px 0px;
-    font-size: 10px;
+.news-meta i {
+    margin-right: 5px; /* Space to the right of icons */
+    color: #007bff; /* Icon color */
 }
 
-.recent div .i12 {
-    margin: 0px 10px 0px -150px;
-    font-size: 10px;
+/* News title styles */
+.news-title {
+    font-size: 20px; /* Size of news title */
+    margin: 10px 0; /* Space above and below title */
 }
 
-.recent div .i2 {
-    padding: 5px 0px 0px 0px;
-    font-size: 10px;
+/* Read more link */
+.news-item a {
+    display: inline-block; /* Block display for padding */
+    margin-top: 10px; /* Space above the link */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
 }
 
-.recent div .i122 {
-    margin: 0px 10px 0px -3px;
-    font-size: 10px;
+.news-item a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
-.recent div .i3 {
-    font-size: 10px;
+/* Responsive styles */
+@media (max-width: 768px) {
+    .team-member-card {
+        flex: 1 1 45%; /* Two cards per row on smaller screens */
+    }
 }
 
-.recent div .i123 {
-    font-size: 10px;
-}
-
-.recent h2 {
-    margin-left: -180px;
-    color: black;
-}
-
-.recent p {
-    margin-left: 18px;
-    text-align: left;
-}
-
-.recent a {
-    margin-left: -340px;
-}
-
-.recent:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background-color: #358fe4;
-    opacity: 0;
-}
-
-.recent:hover::after {
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    transition: 0.5s;
+@media (max-width: 480px) {
+    .team-member-card {
+        flex: 1 1 100%; /* One card per row on extra small screens */
+    }
 }
 
 /*////////////////////////////////////last div/////////////////////////////////*/
@@ -746,4 +885,64 @@ h2 {
 
 .last p {
     color: #b3aeae;
+}
+
+/* General styling for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+}
+
+/* Styling for the logo */
+.div1 img {
+    width: 30px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the navigation */
+.div2 ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.div2 ul li {
+    margin-left: 20px; 
+    font-size: 16px;
+}
+
+.div2 ul a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.div2 ul a li:hover {
+    text-decoration: underline; 
+    border-bottom: 2px solid #f31212;
+}
+
+.div2 ul a:first-child li u {
+    text-decoration: none;
+    border-bottom: 2px solid #f31212;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .div2 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .div2 ul li {
+        margin: 10px 0; /* Add space between items */
+    }
 }
